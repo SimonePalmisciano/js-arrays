@@ -22,15 +22,18 @@ let longNames = [];
 
 for (let z = 0; z < teachers.length; z++) {
 
-  longNames = teachers[z];
+  let names = teachers[z];
 
-  if (longNames.length >= 5) {
+  if (names.length >= 5) {
 
-    console.log(teachers[z]);
-
+    longNames.push(names);
+    
   }
 
 }
+
+console.log(longNames);
+
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
